@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME WV MapRaid Overlay
 // @namespace    https://greasyfork.org/users/45389
-// @version      2018.03.07.001
+// @version      2018.03.07.002
 // @description  Adds a WV MapRaid area overlay.
 // @author       MapOMatic
 // @include      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/?.*$/
@@ -115,7 +115,6 @@
 
 
     function init() {
-        debugger;
         InstallKML();
         loadSettingsFromStorage();
         var layerid = 'wme_' + _stateAbbr + '_mapraid';
