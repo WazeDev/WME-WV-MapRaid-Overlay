@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME WV MapRaid Overlay
 // @namespace    https://greasyfork.org/users/45389
-// @version      2018.03.07.002
+// @version      2018.08.18.001
 // @description  Adds a WV MapRaid area overlay.
 // @author       MapOMatic
 // @include      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/?.*$/
@@ -161,7 +161,7 @@
     }
 
     function bootstrap() {
-        if (W && W.loginManager && W.loginManager.isLoggedIn()) {
+        if (W && W.loginManager && W.loginManager.user) {
             init();
             console.log('WV MR Overlay:', 'Initialized');
         } else {
